@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  main:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: "puppeteer_test"
+    tty: true
+    volumes:
+      - ./:/usr/src/
